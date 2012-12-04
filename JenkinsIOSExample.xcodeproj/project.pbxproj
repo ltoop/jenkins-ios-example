@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75FDC279166EC2C200DA4162 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FDC278166EC2C200DA4162 /* Default-568h@2x.png */; };
 		BC22503E13B2BA940006D350 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC22503D13B2BA940006D350 /* UIKit.framework */; };
 		BC22504013B2BA940006D350 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC22503F13B2BA940006D350 /* Foundation.framework */; };
 		BC22504213B2BA940006D350 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC22504113B2BA940006D350 /* CoreGraphics.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75FDC278166EC2C200DA4162 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BC22503913B2BA940006D350 /* JenkinsIOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JenkinsIOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC22503D13B2BA940006D350 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BC22503F13B2BA940006D350 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,6 +86,7 @@
 		BC22502E13B2BA930006D350 = {
 			isa = PBXGroup;
 			children = (
+				75FDC278166EC2C200DA4162 /* Default-568h@2x.png */,
 				BC22504313B2BA940006D350 /* JenkinsIOSExample */,
 				BC22506313B2BA940006D350 /* JenkinsIOSExampleTests */,
 				BC22503C13B2BA940006D350 /* Frameworks */,
@@ -225,6 +228,7 @@
 				BC22504813B2BA940006D350 /* InfoPlist.strings in Resources */,
 				BC22505113B2BA940006D350 /* MainWindow.xib in Resources */,
 				BC22505713B2BA940006D350 /* JenkinsIOSExampleViewController.xib in Resources */,
+				75FDC279166EC2C200DA4162 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -332,7 +337,8 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -346,7 +352,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
